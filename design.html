@@ -1,0 +1,78 @@
+<script src="script.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Permanent Marker" rel="stylesheet">
+<center>
+		<h1>Coursework Report 2021-2022</h1>
+	</center>
+ <body>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html">Investigation and Plan</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="design.html">Design</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="implementation.html">Implementation and Testing</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="evaluation.html">Evaluation</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="references.html">References</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="summary.html">Summary</a>
+  </li>
+
+</ul>
+
+<h2><center>Design</center></h2>
+<p> I planned to make this embedded system using a microbit, elecfreaks Sensor:bit, python and firebase in three iteration cycles and the website in two cycles as well using the iterative top-down method. Decomposition is a big part of this method as it involves breaking down issues into simpler individual problems, solving them and combining at the end for the final iteration.</p>
+
+   <h3>Hardware Selection</h3>
+  <p> I will be using a microbit and a Sensor:bit (from elecfreaks Smart home Kit). A microbit is a small palm-sized computer with many inbuilt functions, sensors and inputs. I specifically chose the microbit due to its inbuilt thermometer, its ability to be coded with both python & JavaScript, and due to its simple use for all ages. Instead of going with an externally connected speaker with a bunch of wires, I selected the Sensor:bit due to its ease of use. All you do is insert a microbit in the slot. Installation made accessible to all users no matter their technological proficiency </p>
+
+   <h3>Iteration for Embedded System</h3>
+  <p>Iteration 1:</p>
+<dl>
+		<dd>Write pseudocode for what I want the microbit to function as.
+    <img src = "microps.jpg"</dd>
+  <dd>Initialize variables for the alarm to go off</dd>
+  <dd>If temperature lower than lower limit, loud alarm turns on, alerting users.</dd>
+  </dl>
+<p>Iteration 2:</p>
+  <dl>
+    <dd>Set microbit serials to allow python connection</dd>
+    <dd>Pseudocode code for microbit to python to firebase
+    <img src = "fire.jpg"</dd> </dl>
+<p>Iteration 3:</p>
+ <dl>
+    <dd>Finish connection code between microbit, firebase and python</dd> </dl>
+   <br>
+   <h3>Iteration for Interactive Website</h3>
+  <p>Iteration 1:</p>
+  <dl>
+    <dd>Creating a website with navigable links for differnt pages </dd>
+    <dd>Design a logo, company name & color scheme</dd>
+    <dd>Add basic information relating to what the company is </dd>
+  </dl>
+  <p>Iteration 4:</p>
+  <dl>
+    <dd>Make a password protected admin page to see firebase data</dd>
+    <dd>Create a script to link firebase to the website to form one connected system.</dd>
+    <dd>Add member validation to site.</dd>
+  </dl>
+  <h3>Wireframe</h3>
+<p>I used a wireframe to help plan and design the website. It contains 7 pages which include a home page, about us, why buy our products, pricing/faq, contact form, sign up page, and an admin page. 
+   <img src = "wire.jpg"></p>
+
+   <h3>System Architecture</h3>
+   <p>My system architecture helped me visualise what steps and connections I needed to make before connecting everything. The microbit data will be sent to the pc via serial USB connection, in turn getting sent to both the python script and firebase database. The firebase database then sends the data recieved to the admin page in the website <img src = "sys.jpg"></p>
+  <h3>How it met the requirements</h3>
+  <p>The first iteration of both the embedded system and website fulfilled the basic requirements of the brief, as it required minimal user intervention and was a standalone system.
+  <br>
+However, after the 2nd and 3rd iteration, all the requirements of the brief, both basic and advanced, were fulfilled. The website acts as one system due to its ability to monitor data captured from the microbit to firebase. There is validation in the site in the sign-up page and admin page.<br> Different user interface options were added to make the website more accessible for a variety of users. Dark mode for example was essential as the majority of the people who would visit our site would be the elderly and the disabled. The dimness of the screen and contrast of the words makes it easier for them to read and parse the information. Shneiderman's "Eight Golden Rules for interface design" was extremely helpful in designing the site to be more accessible. Jakob Nielsen and his "10 usability heuristics for interface design" was also extremely informative</p>
